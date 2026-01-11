@@ -2,6 +2,8 @@
 
 > Template created from develop-coaching-master-template
 
+**→ See [GETTING-STARTED.md](GETTING-STARTED.md) for a simple checklist!**
+
 ## Quick Start
 
 ### After Creating from Template:
