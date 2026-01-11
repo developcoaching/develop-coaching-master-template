@@ -2,7 +2,7 @@
 
 ## Repository
 
-**URL**: [Update this with your GitHub repository URL]
+**URL**: https://github.com/developcoaching/develop-coaching-master-template
 
 ## Project Overview
 
