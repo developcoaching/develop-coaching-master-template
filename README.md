@@ -4,11 +4,53 @@
 
 ## Quick Start
 
-1. Update `CLAUDE.md` with repository URL
-2. Update `package.json` name and description
-3. Update this README with project details
-4. Run `/pm:init` to verify CCPM setup
-5. Create your first PRD: `/pm:prd-new [feature-name]`
+### After Creating from Template:
+
+**Step 1: Clone Your New Repository**
+```bash
+git clone https://github.com/YOUR-USERNAME/your-new-project.git
+cd your-new-project
+```
+
+**Step 2: Update Project Details**
+
+Edit `package.json`:
+- Change `"name"` from `"project-name-changeme"` to your project name
+- Update `"description"` with your project description
+
+Edit `CLAUDE.md`:
+- Replace `[Update this with your project description]` with your project details
+- Update repository URL to your new repo
+
+Edit this `README.md`:
+- Replace `[Project Name]` with your actual project name
+- Update project-specific details
+
+**Step 3: Verify CCPM Setup**
+
+Open your project in Claude Code and run:
+```
+/pm:init
+```
+
+This verifies all CCPM files are in place and working.
+
+**Step 4: Create Your First Feature**
+
+Plan your first feature with a PRD:
+```
+/pm:prd-new feature-name
+```
+
+Answer the prompts to create a comprehensive Product Requirements Document.
+
+**Step 5: Install Dependencies & Start Coding**
+```bash
+npm install
+npm run dev
+```
+
+Your project will be running at `http://localhost:3000`
 
 ## Develop Coaching Project
 
@@ -41,12 +83,30 @@ npm test
 npm run lint
 ```
 
-## CCPM Commands
+## CCPM Workflow
 
-This template includes Claude Code Project Manager (CCPM) for PRD-driven development:
+This template includes Claude Code Project Manager (CCPM) for PRD-driven development.
 
-- `/pm:init` - Verify CCPM setup
+### Commands:
+
+- `/pm:init` - Verify CCPM setup (run once after cloning)
 - `/pm:prd-new [feature-name]` - Create a new PRD
+
+### Typical Development Workflow:
+
+1. **Plan**: `/pm:prd-new my-feature` - Create PRD for your feature
+2. **Review**: Review the generated PRD in `docs/prds/my-feature-prd.md`
+3. **Build**: Ask Claude to implement based on the PRD
+4. **Test**: Verify functionality and brand consistency
+5. **Commit**: Commit your changes
+6. **Repeat**: Start next feature with new PRD
+
+### Why Use PRDs?
+
+- **Clarity**: Clear requirements before coding
+- **Brand Consistency**: PRDs reference brand guidelines automatically
+- **Documentation**: Built-in project documentation
+- **Communication**: Share plans with stakeholders
 
 ## Project Structure
 
